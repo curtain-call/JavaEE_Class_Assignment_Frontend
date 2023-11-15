@@ -6,7 +6,67 @@
 				"navigationBarTitleText": "uni-app"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/user/user",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "用户",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/signin/signin",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/AIcoach/AIcoach",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "AI教练",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/social/social",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"tabBar": {
+		"list": [
+			{
+				"pagePath": "./pages/schedule/index",
+				"text": "计划",
+				"iconPath": ""
+			},
+			{
+				"pagePath": "./pages/AIcoach/AIcoach",
+				"text": "AI教练",
+				"iconPath": ""
+			},
+			{
+				"pagePath": "./pages/social/social",
+				"text": "星球",
+				"iconPath": ""
+			},
+			{
+				"pagePath": "./pages/user/user",
+				"text": "用户",
+				"iconPath": ""
+			}
+		]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
