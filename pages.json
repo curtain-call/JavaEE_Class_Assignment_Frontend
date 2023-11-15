@@ -1,13 +1,74 @@
 {
 	"pages": [{
-		"path": "pages/index/index",
-		"style": {
-			"navigationBarTitleText": "uni-app"
-		}
-	}],
+            "path" : "pages/schedule/schedule",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/AIcoach/AIcoach",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/social/social",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/user",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"tabBar": {
+		"color": "#F8F8F8",
+		"selectedColor": "#cdcdcd",
+		"iconWidth": "24px",
+		// "backgroundColor": "#e6e6e6",
+		// "height": "50px",
+		"list": [
+			{
+				"pagePath": "pages/schedule/schedule",
+				"text": "计划",
+				"iconPath": "/static/schedule.png",
+				"selectedIconPath": "static/selected_schedule.png"
+			},
+			{
+				"pagePath": "pages/AIcoach/AIcoach",
+				"text": "AI教练",
+				"iconPath": "static/application-ai.png",
+				"selectedIconPath": "static/selected-application-ai.png"
+			},
+			{
+				"pagePath": "pages/social/social",
+				"text": "星球",
+				"iconPath": "static/planet.png",
+				"selectedIconPath": "static/selected_planet.png"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"text": "用户",
+				"iconPath": "static/user.png",
+				"selectedIconPath": "static/selected_user.png"
+			}
+		]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
+		"navigationStyle": "default",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8",
 		"app-plus": {
