@@ -101,3 +101,34 @@
 }
 /* 水平间距 */
 /* 水平间距 */
+.card-container1 {
+  display: flex;
+}
+.btn-contianer {
+  display: flex;
+  margin-left: 12%;
+  margin-top: 5%;
+  height: 100%;
+  width: 300px;
+}
+.card-container2 {
+  display: flex;
+}
+.card-container3 {
+  display: flex;
+}
+.focus {
+  font-size: 12px;
+}
+.fan {
+  font-size: 12px;
+}
+.like {
+  font-size: 12px;
+}
+.changeInfo {
+  border-radius: 20px;
+}
+.my2Dcode {
+  border-radius: 30px;
+}

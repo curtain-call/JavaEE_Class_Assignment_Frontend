@@ -46,7 +46,7 @@ if (uni.restoreGlobal) {
   function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", null, " 计划 ");
   }
-  const PagesScheduleSchedule = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$4], ["__file", "E:/javaEE/ClassAssignment/frontend/AIcoach/pages/schedule/schedule.vue"]]);
+  const PagesScheduleSchedule = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$4], ["__file", "D:/JavaEE_Frontend/pages/schedule/schedule.vue"]]);
   const _sfc_main$4 = {
     data() {
       return {};
@@ -55,7 +55,7 @@ if (uni.restoreGlobal) {
   function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", null, " AI ");
   }
-  const PagesAIcoachAIcoach = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$3], ["__file", "E:/javaEE/ClassAssignment/frontend/AIcoach/pages/AIcoach/AIcoach.vue"]]);
+  const PagesAIcoachAIcoach = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$3], ["__file", "D:/JavaEE_Frontend/pages/AIcoach/AIcoach.vue"]]);
   const _sfc_main$3 = {
     data() {
       return {};
@@ -64,7 +64,17 @@ if (uni.restoreGlobal) {
   function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", null, " 社交 ");
   }
-  const PagesSocialSocial = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$2], ["__file", "E:/javaEE/ClassAssignment/frontend/AIcoach/pages/social/social.vue"]]);
+  const PagesSocialSocial = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$2], ["__file", "D:/JavaEE_Frontend/pages/social/social.vue"]]);
+  function formatAppLog(type, filename, ...args) {
+    if (uni.__log__) {
+      uni.__log__(type, filename, ...args);
+    } else {
+      console[type].apply(console, [...args, filename]);
+    }
+  }
+  function resolveEasycom(component, easycom) {
+    return shared.isString(component) ? easycom : component;
+  }
   const _sfc_main$2 = {
     name: "UniCard",
     emits: ["click"],
@@ -229,32 +239,129 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$1], ["__scopeId", "data-v-ae4bee67"], ["__file", "E:/javaEE/ClassAssignment/frontend/AIcoach/uni_modules/uni-card/components/uni-card/uni-card.vue"]]);
-  function formatAppLog(type, filename, ...args) {
-    if (uni.__log__) {
-      uni.__log__(type, filename, ...args);
-    } else {
-      console[type].apply(console, [...args, filename]);
-    }
-  }
-  function resolveEasycom(component, easycom) {
-    return shared.isString(component) ? easycom : component;
-  }
+  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$1], ["__scopeId", "data-v-ae4bee67"], ["__file", "D:/JavaEE_Frontend/uni_modules/uni-card/components/uni-card/uni-card.vue"]]);
   const _sfc_main$1 = {
     data() {
       return {};
+    },
+    methods: {
+      handleButtonClick() {
+        formatAppLog("log", "at pages/user/user.vue:73", "按钮被点击了");
+      }
     }
   };
   function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_card = resolveEasycom(vue.resolveDynamicComponent("uni-card"), __easycom_0);
     return vue.openBlock(), vue.createElementBlock("view", { class: "bground" }, [
-      vue.createVNode(_component_uni_card, { class: "statistic1" }),
-      vue.createVNode(_component_uni_card, { class: "statistic2" }),
-      vue.createVNode(_component_uni_card, { class: "album" }),
-      vue.createTextVNode(" 用户 ")
+      vue.createVNode(_component_uni_card, {
+        class: "static1",
+        style: { "height": "400rpx" }
+      }, {
+        default: vue.withCtx(() => [
+          vue.createElementVNode("view", {
+            class: "card-container1",
+            style: { "height": "100rpx", "width": "100%", "margin-left": "0" }
+          }, [
+            vue.createElementVNode("view", null, [
+              vue.createVNode(_component_uni_card, { style: { "width": "60rpx", "height": "100%", "padding-right": "20%" } })
+            ]),
+            vue.createElementVNode("view", {
+              class: "btn-contianer",
+              style: { "margin-left": "12%", "margin-top": "5%", "height": "100%" }
+            }, [
+              vue.createElementVNode("button", {
+                class: "focus",
+                onClick: _cache[0] || (_cache[0] = (...args) => $options.handleButtonClick && $options.handleButtonClick(...args))
+              }, [
+                vue.createElementVNode("text", null, "关注"),
+                vue.createElementVNode("br"),
+                vue.createElementVNode("text", null, "0")
+              ]),
+              vue.createElementVNode("button", {
+                class: "fan",
+                onClick: _cache[1] || (_cache[1] = (...args) => $options.handleButtonClick && $options.handleButtonClick(...args))
+              }, [
+                vue.createElementVNode("text", null, "粉丝"),
+                vue.createElementVNode("br"),
+                vue.createElementVNode("text", null, "0")
+              ]),
+              vue.createElementVNode("button", {
+                class: "like",
+                onClick: _cache[2] || (_cache[2] = (...args) => $options.handleButtonClick && $options.handleButtonClick(...args))
+              }, [
+                vue.createElementVNode("text", null, "获赞"),
+                vue.createElementVNode("br"),
+                vue.createElementVNode("text", null, "0")
+              ])
+            ])
+          ]),
+          vue.createElementVNode("view", {
+            class: "card-container2",
+            style: { "margin-top": "20%", "margin-right": "5%" }
+          }, [
+            vue.createElementVNode("button", { class: "changeInfo" }, [
+              vue.createElementVNode("text", null, "修改资料")
+            ]),
+            vue.createElementVNode("button", { class: "my2Dcode" }, [
+              vue.createElementVNode("text", null, "我的二维码")
+            ])
+          ])
+        ]),
+        _: 1
+        /* STABLE */
+      }),
+      vue.createVNode(_component_uni_card, {
+        class: "statistic2",
+        style: { "height": "80px" }
+      }, {
+        default: vue.withCtx(() => [
+          vue.createElementVNode("text", null, [
+            vue.createElementVNode("br"),
+            vue.createElementVNode("br"),
+            vue.createTextVNode("我的订单")
+          ]),
+          vue.createElementVNode("text", null, "      我的活动"),
+          vue.createElementVNode("text", null, "      收藏和赞"),
+          vue.createElementVNode("text", null, "      我的装备")
+        ]),
+        _: 1
+        /* STABLE */
+      }),
+      vue.createElementVNode("view", { class: "card-container3" }, [
+        vue.createVNode(_component_uni_card, {
+          class: "exercise",
+          style: { "width": "50%", "height": "200rpx", "margin-right": "0" }
+        }, {
+          default: vue.withCtx(() => [
+            vue.createElementVNode("text", null, "总运动")
+          ]),
+          _: 1
+          /* STABLE */
+        }),
+        vue.createVNode(_component_uni_card, {
+          class: "information",
+          style: { "width": "50%", "height": "200rpx", "margin-left": "0" }
+        }, {
+          default: vue.withCtx(() => [
+            vue.createElementVNode("text", null, "体重")
+          ]),
+          _: 1
+          /* STABLE */
+        })
+      ]),
+      vue.createVNode(_component_uni_card, {
+        class: "album",
+        style: { "height": "300rpx" }
+      }, {
+        default: vue.withCtx(() => [
+          vue.createElementVNode("text", null, "动态相册")
+        ]),
+        _: 1
+        /* STABLE */
+      })
     ]);
   }
-  const PagesUserUser = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render], ["__file", "E:/javaEE/ClassAssignment/frontend/AIcoach/pages/user/user.vue"]]);
+  const PagesUserUser = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render], ["__file", "D:/JavaEE_Frontend/pages/user/user.vue"]]);
   __definePage("pages/schedule/schedule", PagesScheduleSchedule);
   __definePage("pages/AIcoach/AIcoach", PagesAIcoachAIcoach);
   __definePage("pages/social/social", PagesSocialSocial);
@@ -271,7 +378,7 @@ if (uni.restoreGlobal) {
       formatAppLog("log", "at App.vue:11", "App Hide");
     }
   };
-  const App = /* @__PURE__ */ _export_sfc(_sfc_main, [["__file", "E:/javaEE/ClassAssignment/frontend/AIcoach/App.vue"]]);
+  const App = /* @__PURE__ */ _export_sfc(_sfc_main, [["__file", "D:/JavaEE_Frontend/App.vue"]]);
   function createApp() {
     const app = vue.createVueApp(App);
     return {
