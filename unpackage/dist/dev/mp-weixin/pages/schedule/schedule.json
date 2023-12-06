@@ -1,4 +1,7 @@
 {
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-calendar": "../../uni_modules/uni-calendar/components/uni-calendar/uni-calendar",
+    "uni-card": "../../uni_modules/uni-card/components/uni-card/uni-card"
+  }
 }

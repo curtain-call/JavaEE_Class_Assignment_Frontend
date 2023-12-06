@@ -10,7 +10,7 @@
 					<text class="uni-calendar__header-text uni-calendar--fixed-width">{{okText}}</text>
 				</view>
 			</view>
-			<view class="uni-calendar__header">
+		<!-- 	<view class="uni-calendar__header">
 				<view class="uni-calendar__header-btn-box" @click.stop="pre">
 					<view class="uni-calendar__header-btn uni-calendar--left"></view>
 				</view>
@@ -22,7 +22,7 @@
 				</view>
 				<text class="uni-calendar__backtoday" @click="backToday">{{todayText}}</text>
 
-			</view>
+			</view> -->
 			<view class="uni-calendar__box">
 				<view v-if="showMonth" class="uni-calendar__box-bg">
 					<text class="uni-calendar__box-bg-text">{{nowDate.month}}</text>

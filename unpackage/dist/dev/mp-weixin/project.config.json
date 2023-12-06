@@ -22,23 +22,33 @@
     "packNpmManually": false,
     "packNpmRelationList": [],
     "minifyWXSS": true,
-    "useStaticServer": true,
-    "showES6CompileOption": false,
+    "disableUseStrict": false,
+    "ignoreUploadUnusedFiles": true,
     "checkInvalidKey": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
     },
-    "disableUseStrict": false,
-    "useCompilerPlugins": false,
-    "ignoreUploadUnusedFiles": true
+    "useStaticServer": true,
+    "showES6CompileOption": false,
+    "useCompilerPlugins": false
   },
   "compileType": "miniprogram",
   "libVersion": "2.32.0",
   "appid": "touristappid",
   "projectname": "AIcoach",
-  "condition": {},
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/schedule/schedule",
+          "pathName": "pages/schedule/schedule",
+          "query": ""
+        }
+      ]
+    }
+  },
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
