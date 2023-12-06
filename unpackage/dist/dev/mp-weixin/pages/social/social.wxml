@@ -1,1 +1,1 @@
-<view> 社交 </view>
+<view class="search-bar"><view class="search-bar-box"><input type="text" value="" placeholder="请输入搜索内容" class="search-text" maxlength="10" focus/><button class="search-btn">搜索</button></view></view><view><uni-card u-s="{{['d']}}" u-i="1ed2d616-0" bind:__l="__l"> 精选、跟练、晒奖牌、跑步分享 </uni-card></view><view class="share"><uni-card class="item" style="height:400rpx" u-i="1ed2d616-1" bind:__l="__l"></uni-card><uni-card class="item" style="height:320rpx" u-i="1ed2d616-2" bind:__l="__l"></uni-card></view>

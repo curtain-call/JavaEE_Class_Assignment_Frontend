@@ -113,8 +113,12 @@
 }
 .card-container2 {
   display: flex;
+  align-items: center;
 }
 .card-container3 {
+  display: flex;
+}
+.card-container4 {
   display: flex;
 }
 .focus {
@@ -127,8 +131,8 @@
   font-size: 12px;
 }
 .changeInfo {
-  border-radius: 20px;
+  margin-left: 10%;
 }
-.my2Dcode {
-  border-radius: 30px;
+.praise {
+  margin: 0;
 }

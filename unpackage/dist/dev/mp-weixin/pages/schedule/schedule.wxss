@@ -1,0 +1,62 @@
+/* 水平间距 */
+/* 水平间距 */
+.calendar {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.preference {
+  height: 300rpx;
+}
+.item {
+  height: 120rpx;
+}
+.row {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  height: 115px;
+}
+.rounded-rectangle {
+  height: 110px;
+  /* 您想要的高度 */
+  width: 80%;
+  /* 根据需要设置宽度，留出间隙 */
+  border-radius: 15px;
+  /* 圆角大小 */
+  margin: 0 0 0 8px;
+  /* 两个矩形之间的水平间距 */
+  display: inline-block;
+  /* 使元素保持在同一行 */
+  flex: 0 0 45%;
+}
+.scroll-view-x {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.green {
+  background-color: #4CAF50;
+  /* 绿色 */
+}
+.blue {
+  background-color: #2196F3;
+  /* 蓝色 */
+}
+.purple {
+  background-color: mediumpurple;
+}
+.scroll-view-y {
+  height: 1080px;
+  /* 设置滚动视图的高度 */
+}
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  /* 使头部粘贴到顶部 */
+  transition: opacity 0.3s;
+  /* 平滑过渡效果 */
+  /* 设置头部的其他样式 */
+}
+.calendar-wrapper {
+  border-radius: 15px;
+}
