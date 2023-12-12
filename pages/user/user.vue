@@ -79,10 +79,10 @@
 				<!-- 总运动 -->
 				<button style="margin: 0;width: 300rpx;height: 100%;background-color: transparent;border: none;">					
 					<view style="display: flex;">
-					<image src="../../static/闪电.png" style="width: 30rpx;height: 30rpx;margin-top: 20rpx;"></image>
-					<text style="font-size: 14px;color: rebeccapurple;margin-top:5rpx;margin-left: 8rpx;">
+					<image src="../../static/闪电.png" style="width: 30rpx;height: 30rpx;margin-top: 26rpx;"></image>
+					<text style="font-size: 14px;color: rebeccapurple;margin-top:10rpx;margin-left: 8rpx;">
 						总运动</text>
-					<uni-icons type="right" style="color: lightgrey;margin-left: 90rpx;"></uni-icons>
+					<uni-icons type="right" style="color: lightgrey;margin-left: 90rpx;margin-top: 5rpx;"></uni-icons>
 					</view>
 					<text style="font-weight: bold;font-size: 24px;margin-right: 5rpx;">{{this.sportsTime}}</text>
 						<text style="font-size: 12px;margin-right: 80rpx">分钟</text>

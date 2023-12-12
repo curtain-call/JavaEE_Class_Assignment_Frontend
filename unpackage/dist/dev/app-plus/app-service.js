@@ -48,7 +48,7 @@ if (uni.restoreGlobal) {
     }
     return target;
   };
-  const _sfc_main$f = {
+  const _sfc_main$h = {
     name: "myAvatar",
     props: {
       avatarUrl: {
@@ -57,7 +57,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$g(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "avatar-container" }, [
       vue.createElementVNode("image", {
         class: "avatar",
@@ -66,7 +66,7 @@ if (uni.restoreGlobal) {
       }, null, 8, ["src"])
     ]);
   }
-  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$e], ["__scopeId", "data-v-82386218"], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/components/my-avatar/my-avatar.vue"]]);
+  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["render", _sfc_render$g], ["__scopeId", "data-v-82386218"], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/components/my-avatar/my-avatar.vue"]]);
   const icons = {
     "id": "2852637",
     "name": "uniui图标库",
@@ -1242,7 +1242,7 @@ if (uni.restoreGlobal) {
     const reg = /^[0-9]*$/g;
     return typeof val === "number" || reg.test(val) ? val + "px" : val;
   };
-  const _sfc_main$e = {
+  const _sfc_main$g = {
     name: "UniIcons",
     emits: ["click"],
     props: {
@@ -1286,7 +1286,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "text",
       {
@@ -1299,8 +1299,8 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_2 = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$d], ["__scopeId", "data-v-d31e1c47"], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/uni_modules/uni-icons/components/uni-icons/uni-icons.vue"]]);
-  const _sfc_main$d = {
+  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$f], ["__scopeId", "data-v-d31e1c47"], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/uni_modules/uni-icons/components/uni-icons/uni-icons.vue"]]);
+  const _sfc_main$f = {
     name: "UniStatusBar",
     data() {
       return {
@@ -1308,7 +1308,7 @@ if (uni.restoreGlobal) {
       };
     }
   };
-  function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -1322,9 +1322,9 @@ if (uni.restoreGlobal) {
       /* STYLE */
     );
   }
-  const statusBar = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$c], ["__scopeId", "data-v-7920e3e0"], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-status-bar.vue"]]);
+  const statusBar = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$e], ["__scopeId", "data-v-7920e3e0"], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-status-bar.vue"]]);
   const getVal = (val) => typeof val === "number" ? val + "px" : val;
-  const _sfc_main$c = {
+  const _sfc_main$e = {
     name: "UniNavBar",
     components: {
       statusBar
@@ -1444,9 +1444,9 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_status_bar = vue.resolveComponent("status-bar");
-    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_2);
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_1);
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -1599,7 +1599,7 @@ if (uni.restoreGlobal) {
       /* CLASS */
     );
   }
-  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$b], ["__scopeId", "data-v-26544265"], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar.vue"]]);
+  const __easycom_2 = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$d], ["__scopeId", "data-v-26544265"], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar.vue"]]);
   var calendar = {
     /**
         * 农历1900-2100的润大小信息表
@@ -3080,7 +3080,7 @@ if (uni.restoreGlobal) {
     "zh-Hant": zhHant
   };
   const { t: t$1 } = initVueI18n(i18nMessages);
-  const _sfc_main$b = {
+  const _sfc_main$d = {
     emits: ["change"],
     props: {
       weeks: {
@@ -3117,7 +3117,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -3214,9 +3214,9 @@ if (uni.restoreGlobal) {
       /* CLASS */
     );
   }
-  const CalendarItem = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$a], ["__scopeId", "data-v-65626c58"], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/uni_modules/uni-calendar/components/uni-calendar/uni-calendar-item.vue"]]);
+  const CalendarItem = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$c], ["__scopeId", "data-v-65626c58"], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/uni_modules/uni-calendar/components/uni-calendar/uni-calendar-item.vue"]]);
   const { t } = initVueI18n(i18nMessages);
-  const _sfc_main$a = {
+  const _sfc_main$c = {
     components: {
       CalendarItem
     },
@@ -3485,7 +3485,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_calendar_item = vue.resolveComponent("calendar-item");
     return vue.openBlock(), vue.createElementBlock("view", { class: "uni-calendar" }, [
       !$props.insert && $data.show ? (vue.openBlock(), vue.createElementBlock(
@@ -3667,9 +3667,9 @@ if (uni.restoreGlobal) {
       )) : vue.createCommentVNode("v-if", true)
     ]);
   }
-  const __easycom_3$1 = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$9], ["__scopeId", "data-v-b6ab2cfb"], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/uni_modules/uni-calendar/components/uni-calendar/uni-calendar.vue"]]);
+  const __easycom_3$1 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$b], ["__scopeId", "data-v-b6ab2cfb"], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/uni_modules/uni-calendar/components/uni-calendar/uni-calendar.vue"]]);
   let platform = "other";
-  const _sfc_main$9 = {
+  const _sfc_main$b = {
     name: "UniFab",
     emits: ["fabClick", "trigger"],
     props: {
@@ -3826,8 +3826,8 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_2);
+  function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_1);
     return vue.openBlock(), vue.createElementBlock("view", { class: "uni-cursor-point" }, [
       $props.popMenu && ($options.leftBottom || $options.rightBottom || $options.leftTop || $options.rightTop) && $props.content.length > 0 ? (vue.openBlock(), vue.createElementBlock(
         "view",
@@ -3930,7 +3930,7 @@ if (uni.restoreGlobal) {
       )
     ]);
   }
-  const __easycom_4 = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$8], ["__scopeId", "data-v-85f34dfc"], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/uni_modules/uni-fab/components/uni-fab/uni-fab.vue"]]);
+  const __easycom_4 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$a], ["__scopeId", "data-v-85f34dfc"], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/uni_modules/uni-fab/components/uni-fab/uni-fab.vue"]]);
   class MPAnimation {
     constructor(options, _this) {
       this.options = options;
@@ -4043,7 +4043,7 @@ if (uni.restoreGlobal) {
     clearTimeout(_this.timer);
     return new MPAnimation(option, _this);
   }
-  const _sfc_main$8 = {
+  const _sfc_main$a = {
     name: "uniTransition",
     emits: ["click", "change"],
     props: {
@@ -4294,7 +4294,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
     return $data.isShow || $props.onceRender ? vue.withDirectives((vue.openBlock(), vue.createElementBlock("view", {
       key: 0,
       ref: "ani",
@@ -4308,8 +4308,8 @@ if (uni.restoreGlobal) {
       [vue.vShow, $data.isShow]
     ]) : vue.createCommentVNode("v-if", true);
   }
-  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$7], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/uni_modules/uni-transition/components/uni-transition/uni-transition.vue"]]);
-  const _sfc_main$7 = {
+  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$9], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/uni_modules/uni-transition/components/uni-transition/uni-transition.vue"]]);
+  const _sfc_main$9 = {
     name: "uniPopup",
     components: {},
     emits: ["change", "maskClick"],
@@ -4636,7 +4636,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_transition = resolveEasycom(vue.resolveDynamicComponent("uni-transition"), __easycom_0);
     return $data.showPopup ? (vue.openBlock(), vue.createElementBlock(
       "view",
@@ -4696,8 +4696,8 @@ if (uni.restoreGlobal) {
       /* CLASS */
     )) : vue.createCommentVNode("v-if", true);
   }
-  const __easycom_5 = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$6], ["__scopeId", "data-v-4dd3c44b"], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/uni_modules/uni-popup/components/uni-popup/uni-popup.vue"]]);
-  const _sfc_main$6 = {
+  const __easycom_5 = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$8], ["__scopeId", "data-v-4dd3c44b"], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/uni_modules/uni-popup/components/uni-popup/uni-popup.vue"]]);
+  const _sfc_main$8 = {
     data() {
       return {
         colors: ["green", "blue", "purple", "purple", "green"],
@@ -4736,6 +4736,12 @@ if (uni.restoreGlobal) {
       };
     },
     methods: {
+      //进入sport页面
+      goToSport() {
+        uni.navigateTo({
+          url: "/pages/schedule/sport/sport"
+        });
+      },
       handleScroll(e) {
         const scrollTop = e.detail.scrollTop;
         let newOpacity = 1;
@@ -4746,18 +4752,18 @@ if (uni.restoreGlobal) {
       },
       openPopup() {
         this.$refs.addSchedule.open("bottom");
-        formatAppLog("log", "at pages/schedule/schedule.vue:215", "openpopup");
+        formatAppLog("log", "at pages/schedule/schedule.vue:222", "openpopup");
       }
     },
     mounted() {
       var timeStamp = Date.parse(/* @__PURE__ */ new Date());
-      formatAppLog("log", "at pages/schedule/schedule.vue:222", timeStamp);
+      formatAppLog("log", "at pages/schedule/schedule.vue:229", timeStamp);
     }
   };
-  function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_my_avatar = resolveEasycom(vue.resolveDynamicComponent("my-avatar"), __easycom_0$1);
-    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_2);
-    const _component_uni_nav_bar = resolveEasycom(vue.resolveDynamicComponent("uni-nav-bar"), __easycom_1);
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_1);
+    const _component_uni_nav_bar = resolveEasycom(vue.resolveDynamicComponent("uni-nav-bar"), __easycom_2);
     const _component_uni_calendar = resolveEasycom(vue.resolveDynamicComponent("uni-calendar"), __easycom_3$1);
     const _component_uni_fab = resolveEasycom(vue.resolveDynamicComponent("uni-fab"), __easycom_4);
     const _component_uni_popup = resolveEasycom(vue.resolveDynamicComponent("uni-popup"), __easycom_5);
@@ -4808,7 +4814,7 @@ if (uni.restoreGlobal) {
         {
           "scroll-y": "true",
           class: "scroll-view-y",
-          onScroll: _cache[1] || (_cache[1] = (...args) => $options.handleScroll && $options.handleScroll(...args))
+          onScroll: _cache[2] || (_cache[2] = (...args) => $options.handleScroll && $options.handleScroll(...args))
         },
         [
           vue.createElementVNode(
@@ -4838,7 +4844,10 @@ if (uni.restoreGlobal) {
                           [
                             vue.createCommentVNode(" 运动项目 "),
                             vue.createElementVNode("view", { class: "moving-icon" }),
-                            vue.createElementVNode("view", { class: "discription" }, [
+                            vue.createElementVNode("view", {
+                              class: "discription",
+                              onClick: _cache[0] || (_cache[0] = (...args) => $options.goToSport && $options.goToSport(...args))
+                            }, [
                               vue.createElementVNode(
                                 "p",
                                 { style: { "font-size": "18px", "font-weight": "bold", "color": "white", "margin-bottom": "8px" } },
@@ -5023,7 +5032,7 @@ if (uni.restoreGlobal) {
                   vue.createElementVNode("view", { class: "menu" }, [
                     vue.createElementVNode("view", {
                       class: "add-schedule",
-                      onClick: _cache[0] || (_cache[0] = ($event) => _ctx.uni.navigateTo({
+                      onClick: _cache[1] || (_cache[1] = ($event) => _ctx.uni.navigateTo({
                         url: "",
                         events: {},
                         success: () => {
@@ -5060,8 +5069,8 @@ if (uni.restoreGlobal) {
       )
     ]);
   }
-  const PagesScheduleSchedule = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$5], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/pages/schedule/schedule.vue"]]);
-  const _sfc_main$5 = {
+  const PagesScheduleSchedule = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$7], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/pages/schedule/schedule.vue"]]);
+  const _sfc_main$7 = {
     data() {
       return {
         motions: [{
@@ -5074,10 +5083,10 @@ if (uni.restoreGlobal) {
       };
     }
   };
-  function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_my_avatar = resolveEasycom(vue.resolveDynamicComponent("my-avatar"), __easycom_0$1);
-    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_2);
-    const _component_uni_nav_bar = resolveEasycom(vue.resolveDynamicComponent("uni-nav-bar"), __easycom_1);
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_1);
+    const _component_uni_nav_bar = resolveEasycom(vue.resolveDynamicComponent("uni-nav-bar"), __easycom_2);
     return vue.openBlock(), vue.createElementBlock("view", null, [
       vue.createVNode(_component_uni_nav_bar, {
         "left-width": "400rpx",
@@ -5152,8 +5161,8 @@ if (uni.restoreGlobal) {
       vue.createCommentVNode(" </scroll-view> ")
     ]);
   }
-  const PagesAIcoachAIcoach = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$4], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/pages/AIcoach/AIcoach.vue"]]);
-  const _sfc_main$4 = {
+  const PagesAIcoachAIcoach = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$6], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/pages/AIcoach/AIcoach.vue"]]);
+  const _sfc_main$6 = {
     name: "UniCard",
     emits: ["click"],
     props: {
@@ -5214,7 +5223,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -5317,13 +5326,13 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_3 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$3], ["__scopeId", "data-v-ae4bee67"], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/uni_modules/uni-card/components/uni-card/uni-card.vue"]]);
-  const _sfc_main$3 = {
+  const __easycom_3 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$5], ["__scopeId", "data-v-ae4bee67"], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/uni_modules/uni-card/components/uni-card/uni-card.vue"]]);
+  const _sfc_main$5 = {
     data() {
       return {};
     }
   };
-  function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_uni_card = resolveEasycom(vue.resolveDynamicComponent("uni-card"), __easycom_3);
     return vue.openBlock(), vue.createElementBlock(
       vue.Fragment,
@@ -5367,8 +5376,8 @@ if (uni.restoreGlobal) {
       /* STABLE_FRAGMENT */
     );
   }
-  const PagesSocialSocial = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$2], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/pages/social/social.vue"]]);
-  const _sfc_main$2 = {
+  const PagesSocialSocial = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$4], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/pages/social/social.vue"]]);
+  const _sfc_main$4 = {
     data() {
       return {
         //用户信息
@@ -5389,12 +5398,18 @@ if (uni.restoreGlobal) {
         record: 39
       };
     },
-    methods: {}
+    methods: {
+      goTobodyData() {
+        uni.navigateTo({
+          url: "/pages/user/bodyData/bodyData"
+        });
+      }
+    }
   };
-  function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_my_avatar = resolveEasycom(vue.resolveDynamicComponent("my-avatar"), __easycom_0$1);
-    const _component_uni_nav_bar = resolveEasycom(vue.resolveDynamicComponent("uni-nav-bar"), __easycom_1);
-    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_2);
+    const _component_uni_nav_bar = resolveEasycom(vue.resolveDynamicComponent("uni-nav-bar"), __easycom_2);
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_1);
     const _component_uni_card = resolveEasycom(vue.resolveDynamicComponent("uni-card"), __easycom_3);
     return vue.openBlock(), vue.createElementBlock(
       vue.Fragment,
@@ -5541,12 +5556,12 @@ if (uni.restoreGlobal) {
                   vue.createElementVNode("view", { style: { "display": "flex" } }, [
                     vue.createElementVNode("image", {
                       src: "/static/闪电.png",
-                      style: { "width": "30rpx", "height": "30rpx", "margin-top": "20rpx" }
+                      style: { "width": "30rpx", "height": "30rpx", "margin-top": "26rpx" }
                     }),
-                    vue.createElementVNode("text", { style: { "font-size": "14px", "color": "rebeccapurple", "margin-top": "5rpx", "margin-left": "8rpx" } }, " 总运动"),
+                    vue.createElementVNode("text", { style: { "font-size": "14px", "color": "rebeccapurple", "margin-top": "10rpx", "margin-left": "8rpx" } }, " 总运动"),
                     vue.createVNode(_component_uni_icons, {
                       type: "right",
-                      style: { "color": "lightgrey", "margin-left": "90rpx" }
+                      style: { "color": "lightgrey", "margin-left": "90rpx", "margin-top": "5rpx" }
                     })
                   ]),
                   vue.createElementVNode(
@@ -5566,7 +5581,10 @@ if (uni.restoreGlobal) {
                   )
                 ]),
                 vue.createCommentVNode(" 体重 "),
-                vue.createElementVNode("button", { style: { "margin": "0", "width": "300rpx", "height": "100%", "background-color": "transparent", "border": "none" } }, [
+                vue.createElementVNode("button", {
+                  onClick: _cache[0] || (_cache[0] = (...args) => $options.goTobodyData && $options.goTobodyData(...args)),
+                  style: { "margin": "0", "width": "300rpx", "height": "100%", "background-color": "transparent", "border": "none" }
+                }, [
                   vue.createElementVNode("image", {
                     src: "/static/体重.png",
                     style: { "width": "30rpx", "height": "30rpx" }
@@ -5616,22 +5634,595 @@ if (uni.restoreGlobal) {
       /* STABLE_FRAGMENT */
     );
   }
-  const PagesUserUser = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$1], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/pages/user/user.vue"]]);
-  const _sfc_main$1 = {
+  const PagesUserUser = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$3], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/pages/user/user.vue"]]);
+  const _sfc_main$3 = {
+    data() {
+      return {
+        //用户信息
+        name: "AICoach体验官",
+        like: 0,
+        fan: 0,
+        focus: 1,
+        weight: 74.7,
+        //体重
+        height: 182.7,
+        //身高
+        BMI: 18.9,
+        bodyFat: 16.8,
+        //体脂率
+        //累计运动时长
+        sportsTime: 1218,
+        //运动消耗（千卡）
+        consume: 8.344
+      };
+    },
+    methods: {
+      //返回上一级页面
+      goBack() {
+        uni.navigateBack();
+      },
+      goTosportReport() {
+        uni.navigateTo({
+          url: "/pages/user/bodyData/sportReport/sportReport"
+        });
+      }
+    }
+  };
+  function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_my_avatar = resolveEasycom(vue.resolveDynamicComponent("my-avatar"), __easycom_0$1);
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_1);
+    const _component_uni_nav_bar = resolveEasycom(vue.resolveDynamicComponent("uni-nav-bar"), __easycom_2);
+    const _component_uni_card = resolveEasycom(vue.resolveDynamicComponent("uni-card"), __easycom_3);
+    return vue.openBlock(), vue.createElementBlock("view", {
+      class: "gradient-background",
+      style: { "height": "100%" }
+    }, [
+      vue.createVNode(_component_uni_nav_bar, {
+        "left-width": "400rpx",
+        "right-width": "400rpx",
+        class: "nav",
+        height: "50px",
+        "status-bar": "true",
+        fixed: "true",
+        style: { "margin-bottom": "0" }
+      }, {
+        left: vue.withCtx(() => [
+          vue.createVNode(_component_my_avatar, { class: "avatar" }),
+          vue.createCommentVNode('				<view class="date" style="font-weight: bold;">\r\n						{{this.month}} 月 {{this.day}} 日\r\n					</view> ')
+        ]),
+        right: vue.withCtx(() => [
+          vue.createCommentVNode(' <uni-icons type="upload" class="right-icon" size="26"></uni-icons>\r\n					<view style="width: 10px;" />\r\n					<uni-icons type="settings" size="26"></uni-icons>\r\n					<view style="width: 10px;" />\r\n					<uni-icons type="search" size="26"></uni-icons> '),
+          vue.createVNode(_component_uni_icons, {
+            type: "closeempty",
+            size: "26",
+            onClick: $options.goBack
+          }, null, 8, ["onClick"])
+        ]),
+        _: 1
+        /* STABLE */
+      }),
+      vue.createElementVNode("view", null, [
+        vue.createVNode(_component_uni_card, {
+          class: "vertical",
+          style: { "height": "416rpx", "border-radius": "8px" }
+        }, {
+          default: vue.withCtx(() => [
+            vue.createElementVNode("view", {
+              onClick: _cache[0] || (_cache[0] = (...args) => $options.goTosportReport && $options.goTosportReport(...args))
+            }, [
+              vue.createElementVNode("view", null, [
+                vue.createElementVNode("text", { style: { "color": "black", "font-size": "14px" } }, "运动记录")
+              ]),
+              vue.createElementVNode("view", { style: { "margin-top": "5%" } }, [
+                vue.createElementVNode(
+                  "text",
+                  { style: { "font-weight": "bold", "font-size": "36px", "color": "black" } },
+                  vue.toDisplayString(this.sportsTime),
+                  1
+                  /* TEXT */
+                ),
+                vue.createElementVNode("text", { style: { "color": "black", "margin-left": "1%" } }, "分钟"),
+                vue.createVNode(_component_uni_icons, {
+                  type: "right",
+                  color: "lightgrey",
+                  style: { "margin-left": "57%" }
+                })
+              ]),
+              vue.createElementVNode("view", {
+                class: "divider",
+                style: { "background-color": "lightgrey" }
+              })
+            ]),
+            vue.createElementVNode("view", null, [
+              vue.createElementVNode("image", {
+                src: "/static/日历.png",
+                style: { "width": "20px", "height": "20px", "margin-top": "3rpx" }
+              }),
+              vue.createElementVNode("text", { style: { "color": "limegreen", "margin-left": "10rpx" } }, "今日运动"),
+              vue.createVNode(_component_uni_icons, {
+                type: "right",
+                style: { "color": "lightgray", "margin-left": "420rpx" }
+              })
+            ]),
+            vue.createElementVNode("view", { style: { "display": "flex", "margin-top": "2%" } }, [
+              vue.createElementVNode("view", null, [
+                vue.createElementVNode("text", { style: { "font-size": "12px", "margin-bottom": "3px" } }, "运动时长"),
+                vue.createElementVNode("br"),
+                vue.createElementVNode("text", { style: { "font-weight": "bold", "font-size": "24px", "color": "black" } }, "26"),
+                vue.createElementVNode("text", { style: { "color": "black", "margin-left": "5rpx", "font-size": "12px" } }, "分钟")
+              ]),
+              vue.createElementVNode("view", { style: { "margin-left": "36%" } }, [
+                vue.createElementVNode("text", { style: { "font-size": "12px" } }, "运动消耗"),
+                vue.createElementVNode("br"),
+                vue.createElementVNode("text", { style: { "font-weight": "bold", "font-size": "24px", "color": "black" } }, "67"),
+                vue.createElementVNode("text", { style: { "color": "black", "margin-left": "5rpx", "font-size": "12px" } }, "千卡")
+              ])
+            ]),
+            vue.createElementVNode("view", {
+              class: "divider",
+              style: { "background-color": "lightgrey" }
+            }),
+            vue.createElementVNode("view", { style: { "display": "flex", "margin-top": "3px" } }, [
+              vue.createElementVNode("image", {
+                src: "/static/交换%20(limegreen).png",
+                style: { "width": "16px", "height": "20px" }
+              }),
+              vue.createElementVNode("text", { style: { "font-size": "12px", "margin-left": "8px" } }, "运动数据同步"),
+              vue.createVNode(_component_uni_icons, {
+                type: "right",
+                style: { "color": "lightgray", "margin-left": "204px" }
+              })
+            ])
+          ]),
+          _: 1
+          /* STABLE */
+        })
+      ]),
+      vue.createElementVNode("view", { class: "vertical" }, [
+        vue.createVNode(_component_uni_card, {
+          class: "vertical",
+          style: { "height": "400rpx", "border-radius": "8px" }
+        }, {
+          default: vue.withCtx(() => [
+            vue.createElementVNode("view", null, [
+              vue.createElementVNode("image", {
+                src: "/static/体重.png",
+                style: { "width": "30rpx", "height": "30rpx" }
+              }),
+              vue.createElementVNode("text", { style: { "margin-left": "6rpx", "font-size": "14px", "color": "limegreen" } }, " 身高体重"),
+              vue.createElementVNode("text", { style: { "color": "limegreen", "font-size": "14px", "margin-left": "265rpx", "margin-right": "0" } }, "自动同步数据"),
+              vue.createVNode(_component_uni_icons, {
+                type: "right",
+                style: { "color": "limegreen", "margin-bottom": "0" }
+              })
+            ]),
+            vue.createElementVNode("view", { style: { "margin-top": "3%" } }, [
+              vue.createElementVNode("text", { style: { "font-size": "12px" } }, "体重")
+            ]),
+            vue.createElementVNode("view", null, [
+              vue.createElementVNode(
+                "text",
+                { style: { "font-size": "24px", "font-weight": "bold", "color": "black" } },
+                vue.toDisplayString(this.weight),
+                1
+                /* TEXT */
+              ),
+              vue.createElementVNode("text", { style: { "color": "black", "font-size": "14px" } }, "公斤"),
+              vue.createVNode(_component_uni_icons, {
+                type: "right",
+                style: { "color": "lightgrey", "margin-left": "70%" }
+              })
+            ]),
+            vue.createElementVNode("view", { style: { "margin-top": "50rpx", "display": "flex" } }, [
+              vue.createElementVNode("view", { style: { "width": "33%" } }, [
+                vue.createElementVNode("text", null, [
+                  vue.createTextVNode(" BMI"),
+                  vue.createElementVNode("br")
+                ]),
+                vue.createElementVNode(
+                  "text",
+                  { style: { "font-weight": "bold" } },
+                  vue.toDisplayString(this.BMI),
+                  1
+                  /* TEXT */
+                )
+              ]),
+              vue.createElementVNode("view", {
+                class: "vertical-divider",
+                style: { "background-color": "lightgrey" }
+              }),
+              vue.createElementVNode("view", { style: { "width": "33%" } }, [
+                vue.createElementVNode("text", null, [
+                  vue.createTextVNode(" 体脂率"),
+                  vue.createElementVNode("br")
+                ]),
+                vue.createElementVNode(
+                  "text",
+                  { style: { "font-weight": "bold" } },
+                  vue.toDisplayString(this.bodyFat) + "%",
+                  1
+                  /* TEXT */
+                )
+              ]),
+              vue.createElementVNode("view", {
+                class: "vertical-divider",
+                style: { "background-color": "lightgrey" }
+              }),
+              vue.createElementVNode("view", { style: { "width": "30%" } }, [
+                vue.createElementVNode("text", null, [
+                  vue.createTextVNode(" 身高"),
+                  vue.createElementVNode("br")
+                ]),
+                vue.createElementVNode(
+                  "text",
+                  { style: { "font-weight": "bold" } },
+                  vue.toDisplayString(this.height) + "厘米",
+                  1
+                  /* TEXT */
+                )
+              ])
+            ])
+          ]),
+          _: 1
+          /* STABLE */
+        })
+      ]),
+      vue.createElementVNode("view", null, [
+        vue.createVNode(_component_uni_card, {
+          class: "vertical",
+          style: { "height": "800rpx", "border-radius": "8px" }
+        }, {
+          default: vue.withCtx(() => [
+            vue.createElementVNode("view", null, [
+              vue.createElementVNode("text", null, " 运动报告")
+            ])
+          ]),
+          _: 1
+          /* STABLE */
+        })
+      ])
+    ]);
+  }
+  const PagesUserBodyDataBodyData = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$2], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/pages/user/bodyData/bodyData.vue"]]);
+  const _sfc_main$2 = {
     data() {
       return {};
     },
-    methods: {}
+    methods: {
+      //返回上一级页面
+      goBack() {
+        uni.navigateBack();
+      }
+    }
+  };
+  function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_my_avatar = resolveEasycom(vue.resolveDynamicComponent("my-avatar"), __easycom_0$1);
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_1);
+    const _component_uni_nav_bar = resolveEasycom(vue.resolveDynamicComponent("uni-nav-bar"), __easycom_2);
+    return vue.openBlock(), vue.createElementBlock(
+      vue.Fragment,
+      null,
+      [
+        vue.createVNode(_component_uni_nav_bar, {
+          "left-width": "400rpx",
+          "right-width": "400rpx",
+          class: "nav",
+          height: "50px",
+          "status-bar": "true",
+          fixed: "true",
+          style: { "margin-bottom": "0" }
+        }, {
+          left: vue.withCtx(() => [
+            vue.createVNode(_component_my_avatar, { class: "avatar" }),
+            vue.createCommentVNode('				<view class="date" style="font-weight: bold;">\r\n							{{this.month}} 月 {{this.day}} 日\r\n						</view> ')
+          ]),
+          right: vue.withCtx(() => [
+            vue.createCommentVNode(' <uni-icons type="upload" class="right-icon" size="26"></uni-icons>\r\n						<view style="width: 10px;" />\r\n						<uni-icons type="settings" size="26"></uni-icons>\r\n						<view style="width: 10px;" />\r\n						<uni-icons type="search" size="26"></uni-icons> '),
+            vue.createVNode(_component_uni_icons, {
+              type: "closeempty",
+              size: "26",
+              onClick: $options.goBack
+            }, null, 8, ["onClick"])
+          ]),
+          _: 1
+          /* STABLE */
+        }),
+        vue.createElementVNode("view", { class: "middle" }, [
+          vue.createElementVNode("view", { class: "scroll-x-wrapper" }, [
+            vue.createElementVNode("scroll-view", {
+              class: "scroll-view-x",
+              "scroll-x": "true"
+            }, [
+              vue.createElementVNode("view", { class: "row2" }, [
+                vue.createElementVNode("view", {
+                  class: vue.normalizeClass(["chat-manager", "middle-view"])
+                }, [
+                  vue.createElementVNode("image", {
+                    src: "/static/AIchat2.png",
+                    mode: "aspectFit",
+                    style: { "height": "80%", "width": "30%" }
+                  }),
+                  vue.createElementVNode("view", {
+                    class: "vertical-divider",
+                    style: { "background-color": "darkgray" }
+                  }),
+                  vue.createElementVNode("p", { style: { "font-size": "16px", "margin": "0", "height": "60%", "max-width": "60%", "line-height": "1.6" } }, " 不知道该怎么练? 试试我们的AI健身教练")
+                ]),
+                vue.createElementVNode("view", { class: "statistics middle-view" })
+              ])
+            ])
+          ])
+        ]),
+        vue.createElementVNode("view", { style: { "margin-top": "400px", "display": "flex" } }, [
+          vue.createElementVNode("button", {
+            class: "round-button",
+            style: { "font-size": "12px", "margin-top": "18px", "margin-left": "50px", "margin-right": "0" }
+          }, "目标"),
+          vue.createElementVNode("button", {
+            class: "round-button",
+            style: { "width": "100px", "height": "100px", "background-color": "cornflowerblue", "color": "#ffffff" }
+          }, "开始"),
+          vue.createElementVNode("button", {
+            class: "round-button",
+            style: { "font-size": "12px", "margin-top": "18px", "margin-left": "0px", "margin-right": "50px" }
+          }, "数据")
+        ])
+      ],
+      64
+      /* STABLE_FRAGMENT */
+    );
+  }
+  const PagesScheduleSportSport = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$1], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/pages/schedule/sport/sport.vue"]]);
+  const _sfc_main$1 = {
+    data() {
+      return {
+        //累计运动时长（分钟）
+        sportsTime: 1218,
+        //累计运动消耗（千卡）
+        consume: 8.344,
+        //Today日程 1
+        schedule_today1: [{
+          name: "俯卧撑",
+          discription: "自重训练 · 上肢力量",
+          time: 30,
+          consume: 80,
+          count: 20,
+          //每组次数
+          group: 3,
+          //组数
+          date: "12月10日"
+          //Today日期
+        }],
+        //Today日程 2
+        schedule_today2: [{
+          name: "深蹲",
+          discription: "自重训练 · 下肢力量",
+          time: 25,
+          consume: 110,
+          count: 12,
+          //每组次数
+          group: 3,
+          //组数
+          date: "12月11日"
+          //Today日期
+        }]
+      };
+    },
+    methods: {
+      //返回上一级页面
+      goBack() {
+        uni.navigateBack();
+      }
+    }
   };
   function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
-    return vue.openBlock(), vue.createElementBlock("view");
+    const _component_my_avatar = resolveEasycom(vue.resolveDynamicComponent("my-avatar"), __easycom_0$1);
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_1);
+    const _component_uni_nav_bar = resolveEasycom(vue.resolveDynamicComponent("uni-nav-bar"), __easycom_2);
+    return vue.openBlock(), vue.createElementBlock(
+      vue.Fragment,
+      null,
+      [
+        vue.createVNode(_component_uni_nav_bar, {
+          "left-width": "400rpx",
+          "right-width": "400rpx",
+          class: "nav",
+          height: "50px",
+          "status-bar": "true",
+          fixed: "true",
+          style: { "margin-bottom": "0" }
+        }, {
+          left: vue.withCtx(() => [
+            vue.createVNode(_component_my_avatar, { class: "avatar" }),
+            vue.createCommentVNode('				<view class="date" style="font-weight: bold;">\r\n						{{this.month}} 月 {{this.day}} 日\r\n					</view> ')
+          ]),
+          right: vue.withCtx(() => [
+            vue.createCommentVNode(' <uni-icons type="upload" class="right-icon" size="26"></uni-icons>\r\n					<view style="width: 10px;" />\r\n					<uni-icons type="settings" size="26"></uni-icons>\r\n					<view style="width: 10px;" />\r\n					<uni-icons type="search" size="26"></uni-icons> '),
+            vue.createVNode(_component_uni_icons, {
+              type: "closeempty",
+              size: "26",
+              onClick: $options.goBack
+            }, null, 8, ["onClick"])
+          ]),
+          _: 1
+          /* STABLE */
+        }),
+        vue.createElementVNode("view", { style: { "margin-left": "5%" } }, [
+          vue.createElementVNode("view", { style: { "margin-top": "5%" } }, [
+            vue.createElementVNode("text", { style: { "color": "darkgrey", "font-size": "14px" } }, "时长"),
+            vue.createElementVNode("text", { style: { "color": "darkgrey", "font-size": "14px", "margin-left": "57%" } }, "2018年至2023年")
+          ]),
+          vue.createElementVNode("view", { style: { "margin-top": "2%" } }, [
+            vue.createElementVNode(
+              "text",
+              { style: { "font-size": "30px", "font-weight": "bold" } },
+              vue.toDisplayString(this.sportsTime),
+              1
+              /* TEXT */
+            ),
+            vue.createElementVNode("text", { style: { "color": "darkgrey", "font-size": "14px", "margin-left": "2%" } }, "分钟")
+          ]),
+          vue.createElementVNode("view", { style: { "margin-top": "50rpx", "display": "flex" } }, [
+            vue.createElementVNode("view", { style: { "width": "24%", "color": "darkgrey", "font-size": "14px" } }, [
+              vue.createElementVNode("text", null, [
+                vue.createTextVNode(" 消耗（千卡）"),
+                vue.createElementVNode("br"),
+                vue.createElementVNode("br")
+              ]),
+              vue.createElementVNode(
+                "text",
+                { style: { "font-weight": "bold", "font-size": "18px", "color": "black" } },
+                vue.toDisplayString(this.consume),
+                1
+                /* TEXT */
+              )
+            ]),
+            vue.createElementVNode("view", {
+              class: "vertical-divider",
+              style: { "background-color": "lightgrey" }
+            }),
+            vue.createElementVNode("view", { style: { "width": "20%", "color": "darkgrey", "font-size": "14px" } }, [
+              vue.createElementVNode("text", null, [
+                vue.createTextVNode(" 完成（次）"),
+                vue.createElementVNode("br"),
+                vue.createElementVNode("br")
+              ]),
+              vue.createElementVNode("text", { style: { "font-weight": "bold", "font-size": "18px", "color": "black" } }, " 100")
+            ]),
+            vue.createElementVNode("view", {
+              class: "vertical-divider",
+              style: { "background-color": "lightgrey" }
+            }),
+            vue.createElementVNode("view", { style: { "width": "20%", "color": "darkgrey", "font-size": "14px" } }, [
+              vue.createElementVNode("text", null, [
+                vue.createTextVNode(" 累计（天）"),
+                vue.createElementVNode("br"),
+                vue.createElementVNode("br")
+              ]),
+              vue.createElementVNode("text", { style: { "font-weight": "bold", "font-size": "18px", "color": "black" } }, " 66")
+            ]),
+            vue.createElementVNode("view", {
+              class: "vertical-divider",
+              style: { "background-color": "lightgrey" }
+            }),
+            vue.createElementVNode("view", { style: { "width": "20%", "color": "darkgrey", "font-size": "14px" } }, [
+              vue.createElementVNode("text", null, [
+                vue.createTextVNode(" 连续（天）"),
+                vue.createElementVNode("br"),
+                vue.createElementVNode("br")
+              ]),
+              vue.createElementVNode("text", { style: { "font-weight": "bold", "font-size": "18px", "color": "black" } }, " 8")
+            ])
+          ])
+        ]),
+        vue.createCommentVNode(" 运动统计表 "),
+        vue.createCommentVNode(' <view style="margin-top: 5%;">\r\n		<uni-card>折线图</uni-card>\r\n	</view> '),
+        vue.createCommentVNode(" 运动视频 "),
+        vue.createElementVNode("view", null, [
+          vue.createElementVNode("video", {
+            src: "/static/video/11月29日.mp4",
+            style: { "width": "100%", "height": "300px" }
+          })
+        ]),
+        vue.createCommentVNode(" 运动报告 "),
+        vue.createElementVNode("view", { style: { "margin-left": "4%", "margin-right": "4%" } }, [
+          (vue.openBlock(true), vue.createElementBlock(
+            vue.Fragment,
+            null,
+            vue.renderList($data.schedule_today1, (item, index) => {
+              return vue.openBlock(), vue.createElementBlock("view", { style: { "margin-top": "8%", "display": "flex", "width": "100%" } }, [
+                vue.createElementVNode("view", { style: { "width": "50%" } }, [
+                  vue.createElementVNode(
+                    "text",
+                    { style: { "font-size": "15px", "color": "dimgrey" } },
+                    vue.toDisplayString(item.name) + " " + vue.toDisplayString(item.count) + "×" + vue.toDisplayString(item.group) + " 次",
+                    1
+                    /* TEXT */
+                  ),
+                  vue.createElementVNode("br"),
+                  vue.createElementVNode(
+                    "text",
+                    { style: { "font-size": "12px", "color": "grey" } },
+                    "用时 " + vue.toDisplayString(item.time) + "分钟 消耗 " + vue.toDisplayString(item.consume) + " 千卡",
+                    1
+                    /* TEXT */
+                  )
+                ]),
+                vue.createElementVNode("view", { style: { "margin-left": "35%" } }, [
+                  vue.createElementVNode(
+                    "text",
+                    { style: { "font-size": "12px", "color": "lightgrey", "margin-top": "3%" } },
+                    vue.toDisplayString(item.date),
+                    1
+                    /* TEXT */
+                  )
+                ])
+              ]);
+            }),
+            256
+            /* UNKEYED_FRAGMENT */
+          )),
+          vue.createElementVNode("view", {
+            class: "divider",
+            style: { "background-color": "lightgrey" }
+          }),
+          (vue.openBlock(true), vue.createElementBlock(
+            vue.Fragment,
+            null,
+            vue.renderList($data.schedule_today2, (item, index) => {
+              return vue.openBlock(), vue.createElementBlock("view", { style: { "margin-top": "8%", "display": "flex", "width": "100%" } }, [
+                vue.createElementVNode("view", { style: { "width": "50%" } }, [
+                  vue.createElementVNode(
+                    "text",
+                    { style: { "font-size": "15px", "color": "dimgrey" } },
+                    vue.toDisplayString(item.name) + " " + vue.toDisplayString(item.count) + "×" + vue.toDisplayString(item.group) + " 次",
+                    1
+                    /* TEXT */
+                  ),
+                  vue.createElementVNode("br"),
+                  vue.createElementVNode(
+                    "text",
+                    { style: { "font-size": "12px", "color": "grey" } },
+                    "用时 " + vue.toDisplayString(item.time) + "分钟 消耗 " + vue.toDisplayString(item.consume) + " 千卡",
+                    1
+                    /* TEXT */
+                  )
+                ]),
+                vue.createElementVNode("view", { style: { "margin-left": "35%" } }, [
+                  vue.createElementVNode(
+                    "text",
+                    { style: { "font-size": "12px", "color": "lightgrey", "margin-top": "3%" } },
+                    vue.toDisplayString(item.date),
+                    1
+                    /* TEXT */
+                  )
+                ])
+              ]);
+            }),
+            256
+            /* UNKEYED_FRAGMENT */
+          )),
+          vue.createElementVNode("view", {
+            class: "divider",
+            style: { "background-color": "lightgrey" }
+          }),
+          vue.createElementVNode("view", { style: { "margin-top": "8%", "display": "flex", "justify-content": "center" } }, [
+            vue.createElementVNode("text", { style: { "color": "limegreen", "font-size": "14px" } }, "查看更多记录")
+          ])
+        ])
+      ],
+      64
+      /* STABLE_FRAGMENT */
+    );
   }
-  const PagesUserBodyDataBodyData = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/pages/user/bodyData/bodyData.vue"]]);
+  const PagesUserBodyDataSportReportSportReport = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render], ["__file", "D:/JavaEEFrontEnd/JavaEE_Class_Assignment_Frontend/pages/user/bodyData/sportReport/sportReport.vue"]]);
   __definePage("pages/schedule/schedule", PagesScheduleSchedule);
   __definePage("pages/AIcoach/AIcoach", PagesAIcoachAIcoach);
   __definePage("pages/social/social", PagesSocialSocial);
   __definePage("pages/user/user", PagesUserUser);
   __definePage("pages/user/bodyData/bodyData", PagesUserBodyDataBodyData);
+  __definePage("pages/schedule/sport/sport", PagesScheduleSportSport);
+  __definePage("pages/user/bodyData/sportReport/sportReport", PagesUserBodyDataSportReportSportReport);
   const _sfc_main = {
     onLaunch: function() {
       formatAppLog("warn", "at App.vue:4", "当前组件仅支持 uni_modules 目录结构 ，请升级 HBuilderX 到 3.1.0 版本以上！");

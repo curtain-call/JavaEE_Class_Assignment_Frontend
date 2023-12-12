@@ -27,13 +27,13 @@
 				<view class="scroll-x-wrapper">
 					<scroll-view class="scroll-view-x" scroll-x="true">
 						<view class="row1">
-							<view :class="['rounded-rectangle']" v-for="(item,index) in schedule_today"
+							<view :class="['rounded-rectangle']"  v-for="(item,index) in schedule_today"
 								:style="{backgroundColor: colors[index]}">
 								<!-- 运动项目 -->
 								<view class="moving-icon">
 
 								</view>
-								<view class="discription">
+								<view class="discription" @click="goToSport">
 									<p style="font-size: 18px;font-weight: bold;color: white;margin-bottom: 8px;">
 										开始{{item.name}}</p>
 									<p style="font-size: 12px;color: white;">点击前往{{item.name}}首页</p>
@@ -198,6 +198,13 @@
 			}
 		},
 		methods: {
+			//进入sport页面
+			goToSport() {
+			      uni.navigateTo({
+			        url: '/pages/schedule/sport/sport'
+			      });
+			},
+				
 			handleScroll(e) {
 				// console.log("be functioning")
 				// 获取滚动条当前的位置
