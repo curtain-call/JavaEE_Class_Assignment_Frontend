@@ -7,8 +7,8 @@
   "id": "__UNI__56C3908",
   "name": "AIcoach",
   "version": {
-    "name": "1.0.0",
-    "code": "100"
+    "name": "1.0.2",
+    "code": 102
   },
   "description": "",
   "developer": {
@@ -17,6 +17,8 @@
     "url": ""
   },
   "permissions": {
+    "VideoPlayer": {},
+    "Camera": {},
     "UniNView": {
       "description": "UniNView原生渲染"
     }
@@ -87,7 +89,7 @@
     "uni-app": {
       "control": "uni-v3",
       "vueVersion": "3",
-      "compilerVersion": "3.96",
+      "compilerVersion": "3.98",
       "nvueCompiler": "uni-app",
       "renderer": "auto",
       "nvue": {
@@ -100,8 +102,8 @@
     },
     "tabBar": {
       "position": "bottom",
-      "color": "#999",
-      "selectedColor": "#007aff",
+      "color": "#F8F8F8",
+      "selectedColor": "#cdcdcd",
       "borderStyle": "rgba(0,0,0,0.4)",
       "blurEffect": "none",
       "fontSize": "10px",
@@ -110,24 +112,28 @@
       "height": "50px",
       "list": [
         {
-          "pagePath": "./pages/schedule/schedule",
+          "pagePath": "pages/schedule/schedule",
           "text": "计划",
-          "iconPath": "/static/schedule.svg"
+          "iconPath": "/static/schedule.png",
+          "selectedIconPath": "/static/selected_schedule.png"
         },
         {
           "pagePath": "pages/AIcoach/AIcoach",
           "text": "AI教练",
-          "iconPath": "/./static/application-ai.svg"
+          "iconPath": "/static/application-ai.png",
+          "selectedIconPath": "/static/selected-application-ai.png"
         },
         {
-          "pagePath": "./pages/social/social",
+          "pagePath": "pages/social/social",
           "text": "星球",
-          "iconPath": "/static/planet.svg"
+          "iconPath": "/static/planet.png",
+          "selectedIconPath": "/static/selected_planet.png"
         },
         {
-          "pagePath": "./pages/user/user",
+          "pagePath": "pages/user/user",
           "text": "用户",
-          "iconPath": "/./static/user.svg"
+          "iconPath": "/static/user.png",
+          "selectedIconPath": "/static/selected_user.png"
         }
       ],
       "selectedIndex": 0,

@@ -1,0 +1,159 @@
+<template>
+	<div class="container-subnvue">
+		<div class="slogan-wrapper">
+			<text class="slogan">Don't wish for it,</text>
+			<text class="slogan">work for it.</text>
+		</div>
+
+		<div class="login-form">
+			<input class="login-input" type="text" placeholder="账号" v-model="account" />
+			<input class="login-input" type="password" placeholder="密码" v-model="password" />
+			<div class="button-wrapper">
+				<button class="login-button" @click="login">登录</button>
+				<button class="register-button" @click="toRegister">注册</button>
+			</div>
+
+		</div>
+	</div>
+
+</template>
+
+<script>
+	import { useUserStore } from '@/stores/user.js'
+	import { mapStores } from 'pinia'
+	export default {
+		computed:{
+			...mapStores(useUserStore)
+		},
+		data() {
+			return {
+				account: '',
+				password: ''
+			}
+		},
+		methods: {
+			login() {
+				// 登录逻辑回调
+				let user = this.userStore
+				uni.request({
+					url: "http://192.168.43.98:8080/users/login",
+					data: {
+						account: this.account,
+						password: this.password,
+					},
+					header:{
+						'content-type': 'application/json'
+					},
+					timeout: 60000,
+					method: "POST",
+					success(res){
+						// console.log(res.data)
+						user.$state = res.data
+						// console.log(user.account)
+						uni.reLaunch({
+							url: "/pages/schedule/schedule",
+							success() {
+								
+								console.log("success")
+							}
+						})
+					},
+					fail: (res) => {
+						console.log(res)
+					},
+
+				})
+
+
+			},
+			toRegister() {
+
+			}
+		}
+
+	}
+</script>
+
+<style lang="scss">
+	div {
+		width: 200px;
+	}
+
+	.container-subnvue {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.slogan-wrapper {
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.slogan {
+		font-size: 32px;
+		color: white;
+		align-self: center;
+	}
+
+	.login-form {
+		width: 200px;
+		height: 200px;
+		margin: 0 0;
+		padding-top: 20px;
+
+
+		/* 根据需要调整 */
+		display: flex;
+		align-items: center;
+
+	}
+
+	.login-input {
+		display: block;
+		width: 200px;
+		height: 40px;
+		padding: 10px;
+		margin-bottom: 15px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		color: black;
+
+		z-index: 2;
+		background-color: #ccc;
+	}
+
+	.button-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.login-button {
+		display: inline;
+		height: 50px;
+		width: 90px;
+		margin-right: 10px;
+		padding: 10px;
+		background-color: #007aff;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		font-size: 16px;
+	}
+
+	.register-button {
+		display: inline;
+		height: 50px;
+		width: 90px;
+		margin-left: 10px;
+		padding: 10px;
+		background-color: darkgray;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		font-size: 16px;
+	}
+</style>

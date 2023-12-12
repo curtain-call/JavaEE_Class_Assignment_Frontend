@@ -1,0 +1,72 @@
+<template>
+	<view class="container">
+		<video autoplay loop muted class="background-video" src="../../static/login.mp4" controls="false"
+			enable-progress-gesture="false" vslide-gesture-in-fullscreen="false">
+
+		</video>
+
+		<cover-view class="video-overlay">
+
+		</cover-view>
+
+
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+
+			}
+		},
+		methods: {
+			login() {
+				
+			}
+		},
+		onLaunch() {
+			let subNVue = uni.getSubNVueById('login-form')
+			subNVue.show('fade-in', 100)
+		}
+	}
+</script>
+
+<style>
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.container {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+
+	.background-video {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		/* 保持视频宽高比 */
+		z-index: -1;
+	}
+
+
+	.video-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		/* 黑色半透明遮罩 */
+		z-index: 1;
+		/* 确保遮罩在视频上方 */
+	}
+</style>
