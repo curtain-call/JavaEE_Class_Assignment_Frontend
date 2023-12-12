@@ -24,7 +24,7 @@
 		<scroll-view scroll-y="true" class="scroll-view-y" @scroll="handleScroll">
 			<view class="header" :style="{ opacity: headerOpacity }">
 				<!-- 横向滑动的 wrapper -->
-				
+
 				<view class="calendar-wrapper">
 					<!-- 日历 -->
 					<view class="calendar" style="mar">
@@ -185,6 +185,13 @@
 			}
 		},
 		methods: {
+			//进入sport页面
+			goToSport() {
+			      uni.navigateTo({
+			        url: '/pages/schedule/sport/sport'
+			      });
+			},
+				
 			handleScroll(e) {
 				// console.log("be functioning")
 				// 获取滚动条当前的位置

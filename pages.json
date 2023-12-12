@@ -68,7 +68,23 @@
         	"path" : "pages/user/bodyData/bodyData",
         	"style" : 
         	{
-        		"navigationBarTitleText" : "新页面",
+        		"navigationBarTitleText" : "bodyData页面",
+        		"enablePullDownRefresh" : false
+        	}
+        },
+        {
+        	"path" : "pages/schedule/sport/sport",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "sport页面",
+        		"enablePullDownRefresh" : false
+        	}
+        },
+        {
+        	"path" : "pages/user/bodyData/sportReport/sportReport",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "",
         		"enablePullDownRefresh" : false
         	}
         },
