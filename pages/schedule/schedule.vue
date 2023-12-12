@@ -24,25 +24,7 @@
 		<scroll-view scroll-y="true" class="scroll-view-y" @scroll="handleScroll">
 			<view class="header" :style="{ opacity: headerOpacity }">
 				<!-- 横向滑动的 wrapper -->
-				<view class="scroll-x-wrapper">
-					<scroll-view class="scroll-view-x" scroll-x="true">
-						<view class="row1">
-							<view :class="['rounded-rectangle']" v-for="(item,index) in schedule_today"
-								:style="{backgroundColor: colors[index]}">
-								<!-- 运动项目 -->
-								<view class="moving-icon">
-
-								</view>
-								<view class="discription">
-									<p style="font-size: 18px;font-weight: bold;color: white;margin-bottom: 8px;">
-										开始{{item.name}}</p>
-									<p style="font-size: 12px;color: white;">点击前往{{item.name}}首页</p>
-								</view>
-							</view>
-						</view>
-					</scroll-view>
-				</view>
-
+				
 				<view class="calendar-wrapper">
 					<!-- 日历 -->
 					<view class="calendar" style="mar">
@@ -57,7 +39,7 @@
 					<view class="scroll-x-wrapper">
 						<scroll-view class="scroll-view-x" scroll-x="true">
 							<view class="row2">
-								<view :class="['chat-manager', 'middle-view']">
+								<view :class="['chat-manager', 'middle-view']" @click="chatAI">
 
 									<image src="../../static/AIchat2.png" mode="aspectFit"
 										style="height: 80%;width: 30%; "></image>
@@ -67,7 +49,7 @@
 										不知道该怎么练? 试试我们的AI健身教练</p>
 								</view>
 								<view class="statistics middle-view">
-
+									{{userStore.account}}
 								</view>
 
 							</view>
@@ -152,8 +134,13 @@
 
 <script>
 	// import avatar from './avatar.vue'
+	import {useUserStore} from '@/stores/user.js'
+	import {mapStores} from 'pinia'
 
 	export default {
+		computed:{
+			...mapStores(useUserStore)
+		},
 		data() {
 			return {
 				colors: ['green', 'blue', 'purple', 'purple', 'green'],
@@ -204,8 +191,8 @@
 				const scrollTop = e.detail.scrollTop;
 				// 计算透明度，假设滚动超过100px开始变化，200px完全透明
 				let newOpacity = 1;
-				if (scrollTop > 100) {
-					newOpacity = Math.max(1 - (scrollTop - 100) / 100, 0);
+				if (scrollTop > 70) {
+					newOpacity = Math.max(1 - (scrollTop - 70) / 70, 0);
 				}
 				// 更新透明度
 				this.headerOpacity = newOpacity;
@@ -213,6 +200,10 @@
 			openPopup() {
 				this.$refs.addSchedule.open('bottom')
 				console.log("openpopup")
+			},
+			chatAI(){
+				console.log("chatAI popup")
+				uni.navigateTo({ url:'./chatAI/chatAI' })
 			}
 		},
 		mounted() {
@@ -220,6 +211,7 @@
 			// 拿到当前的时间
 			var timeStamp = Date.parse(new Date())
 			console.log(timeStamp)
+			console.log(this.userStore.account)
 
 			// 后端请求
 		},
@@ -367,7 +359,7 @@
 		transition: opacity 0.3s;
 		/* 平滑过渡效果 */
 		/* 设置头部的其他样式 */
-		height: 425px;
+		height: 300px;
 		margin-bottom: 5px;
 		// z-index: 9999;
 	}

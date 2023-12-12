@@ -1,5 +1,38 @@
 {
-	"pages": [{
+	"pages": [
+		{
+			"path": "pages/login/login",
+			"style" :
+			{
+			    "enablePullDownRefresh": false,
+				"app-plus": {
+				                "subNVues":[{  
+				                    "id": "login-form", // 唯一标识  
+				                    "path": "pages/login/login/login", // 页面路径  
+				                    /*"type": "popup",  这里不需要*/  
+				                    "style": {  
+				                        "position": "absolute",  
+				                        // "dock": "top",    
+				                        "background": "transparent" ,
+										"top": "25%",
+										// "left": "20%",
+										// "right": "10%",
+										"height": "400px",
+										"width": "100%"
+
+				                    }  
+				                }]  
+				            }  
+			}
+		},
+		{
+			"path": "pages/register/register",
+			"style" :
+			{
+			    "enablePullDownRefresh": false
+			}
+		},
+		{
             "path" : "pages/schedule/schedule",
             "style" :                                                                                    
             {
@@ -38,7 +71,14 @@
         		"navigationBarTitleText" : "新页面",
         		"enablePullDownRefresh" : false
         	}
-        }
+        },
+		{
+			"path": "pages/schedule/chatAI/chatAI",
+			"style": {
+				"navigationBarTitleText" : "ChatAI",
+				"enablePullDownRefresh" : false
+			}
+		}
     ],
 	"tabBar": {
 		"color": "#F8F8F8",

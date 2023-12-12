@@ -79,7 +79,7 @@
 				<!-- 总运动 -->
 				<button style="margin: 0;width: 300rpx;height: 100%;background-color: transparent;border: none;">					
 					<view style="display: flex;">
-					<image src="../../static/闪电.png" style="width: 30rpx;height: 30rpx;margin-top: 20rpx;"></image>
+					<image src="/static/lightning.png" style="width: 30rpx;height: 30rpx;margin-top: 20rpx;"></image>
 					<text style="font-size: 14px;color: rebeccapurple;margin-top:5rpx;margin-left: 8rpx;">
 						总运动</text>
 					<uni-icons type="right" style="color: lightgrey;margin-left: 90rpx;"></uni-icons>
@@ -92,7 +92,7 @@
 				</button>
 				<!-- 体重 -->
 				<button @click="goTobodyData" style="margin:0;width:300rpx;height: 100%;background-color: transparent;border:none;">
-					<image src="../../static/体重.png" style="width: 30rpx;height: 30rpx;"></image>
+					<image src="/static/ligntning.png" style="width: 30rpx;height: 30rpx;"></image>
 					<text style="font-size: 14px;color: limegreen;">
 						体重</text>
 					<uni-icons type="right" style="color: lightgrey;margin-left: 90rpx;"></uni-icons>
@@ -106,7 +106,7 @@
 		
 		<button class="album" style="height: 500rpx;margin-top: 40rpx;;margin-left: 0;margin-right: 0;background-color: transparent;">
 			<view style="display: flex;">
-			<image src="../../static/相册.png" style="width: 60rpx;height: 60rpx;margin-top: 15rpx;"></image>
+			<image src="/static/album.png" style="width: 60rpx;height: 60rpx;margin-top: 15rpx;"></image>
 			<text style="font-size: 14px;color:pink;margin-left: 10rpx;margin-top: 12rpx;">动态相册</text>
 			</view>
 		</button>

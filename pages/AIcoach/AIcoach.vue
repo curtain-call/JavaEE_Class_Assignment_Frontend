@@ -3,7 +3,7 @@
 		<uni-nav-bar left-width="400rpx" right-width="400rpx" class="nav" height="50px" status-bar="true" fixed="true">
 			<template #left class="left-slot">
 				<my-avatar class="avatar"></my-avatar>
-<!-- 				<view class="date" style="font-weight: bold;">
+				<!-- 				<view class="date" style="font-weight: bold;">
 					{{this.month}} 月 {{this.day}} 日
 				</view> -->
 			</template>
@@ -22,10 +22,22 @@
   overflow-wrap: break-word;">动作测评</p>
 			<scroll-view scroll-x="true" class="">
 				<view class="row1">
-					<view class="rounded-rectangle" v-for="(item,index) in motions"></view>
+<!-- 					<view class="rounded-rectangle" v-for="(item,index) in motions"></view>
 
 					<view class="rounded-rectangle plus">
 						<uni-icons type="plus" size="80" class="add"></uni-icons>
+					</view> -->
+					<view :class="['rounded-rectangle']" v-for="(item,index) in motions"
+						:style="{backgroundColor: colors[index]}">
+						<!-- 运动项目 -->
+						<view class="moving-icon">
+					
+						</view>
+						<view class="discription">
+							<p style="font-size: 18px;font-weight: bold;color: white;margin-bottom: 8px;">
+								开始{{item.name}}</p>
+							<p style="font-size: 12px;color: white;">点击前往{{item.name}}首页</p>
+						</view>
 					</view>
 				</view>
 			</scroll-view>
@@ -34,17 +46,32 @@
 		<view class="sports-report">
 			<p style="font-size: 18px;font-weight: bold; margin-bottom: 15px; margin-left: 15px;word-wrap: break-word;
   overflow-wrap: break-word;">运动报告</p>
-			<view class="statistics">
-				
-			</view>
+			<!-- 包含一些东西，视频本身，关键帧，诊断，建议 -->
+			<scroll-view scroll-y="true" class="statistics">
+				<uni-list class="report-list" :border="false">
+					<uni-list-item clickable @click="" link to="" thumb="../../../static/pushup_thumb_test.jpg"
+						thumb-size="lg" :border="false" v-for="(item,index) in sportsReportList">
+						<p>{{item.name}}</p>
+						<p>{{item.description}}</p>
+						</uni-list-item>
+					
+				</uni-list>
+			</scroll-view>
 		</view>
 
 		<view class="fitness-report">
 			<p style="font-size: 18px;font-weight: bold; margin-bottom: 15px; margin-left: 15px;word-wrap: break-word;
   overflow-wrap: break-word;">健康报告</p>
-			<view class="statistics">
-
-			</view>
+			<scroll-view scroll-y="true" class="statistics">
+				<uni-list class="report-list" :border="false">
+					<uni-list-item clickable @click="" link to="" thumb="../../../static/pushup_thumb_test.jpg"
+						thumb-size="lg" :border="false" v-for="(item,index) in fitnessReportList">
+						<p>{{item.name}}</p>
+						<p>{{item.description}}</p>
+						</uni-list-item>
+					
+				</uni-list>
+			</scroll-view>
 		</view>
 		<!-- </scroll-view> -->
 
@@ -60,11 +87,13 @@
 					name: '俯卧撑',
 					targetVideo: '',
 
-				},{
+				}, {
 					name: '深蹲',
 					targetVideo: '',
-
-				}]
+				}],
+				colors: ['green', 'blue', 'purple', 'purple', 'green'],
+				sportsReportList: [],
+				fitnessReportList: []
 			};
 		}
 	}
@@ -100,15 +129,25 @@
 		display: flex;
 		flex-direction: column;
 
-
 		.statistics {
 			height: 200px;
 			width: 95%;
 			background-color: white;
 			border-radius: 15px;
-
 			align-self: center;
+			padding: 0 15px;
+			position: relative;
 
+			.report-list {
+				height: 100%;
+
+				border-radius: 15px;
+			}
+
+			uni-list-item {
+				border-radius: 15px;
+				width: 90%;
+			}
 		}
 	}
 
@@ -136,8 +175,8 @@
 
 
 		.rounded-rectangle {
-			background-color: white;
-			height: 150px;
+
+			height: 140px;
 			/* 您想要的高度 */
 			width: 60%;
 			/* 根据需要设置宽度，留出间隙 */
@@ -149,15 +188,24 @@
 			display: inline-block;
 			/* 使元素保持在同一行 */
 			flex: 0 0 45%;
+			
+			.moving-icon {
+				height: 50%;
+			}
+			
+			.discription {
+				height: 50%;
+				padding-left: 5%;
+			}
 		}
-		
-		.plus{
+
+		.plus {
 			display: flex;
 			flex-direction: row;
 			align-items: center;
 			justify-content: center;
-			
-			.add{
+
+			.add {
 				align-self: center;
 				justify-self: center;
 				vertical-align: middle;

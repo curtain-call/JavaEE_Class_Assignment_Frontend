@@ -1095,7 +1095,7 @@
   transition: opacity 0.3s;
   /* 平滑过渡效果 */
   /* 设置头部的其他样式 */
-  height: 425px;
+  height: 300px;
   margin-bottom: 5px;
 }
 .middle-down-wrapper {

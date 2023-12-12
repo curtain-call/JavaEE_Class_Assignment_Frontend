@@ -7,8 +7,8 @@
   "id": "__UNI__56C3908",
   "name": "AIcoach",
   "version": {
-    "name": "1.0.0",
-    "code": "100"
+    "name": "1.0.2",
+    "code": 102
   },
   "description": "",
   "developer": {
@@ -17,6 +17,8 @@
     "url": ""
   },
   "permissions": {
+    "VideoPlayer": {},
+    "Camera": {},
     "UniNView": {
       "description": "UniNView原生渲染"
     }
@@ -87,7 +89,7 @@
     "uni-app": {
       "control": "uni-v3",
       "vueVersion": "3",
-      "compilerVersion": "3.96",
+      "compilerVersion": "3.98",
       "nvueCompiler": "uni-app",
       "renderer": "auto",
       "nvue": {
@@ -135,11 +137,7 @@
         }
       ],
       "selectedIndex": 0,
-      "shown": true,
-      "child": [
-        "lauchwebview"
-      ],
-      "selected": 0
+      "shown": true
     }
   },
   "launch_path": "__uniappview.html"
